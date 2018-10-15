@@ -3,6 +3,8 @@
 @section('content')
 
 <div class="container margin">
+    <img src="{{base_url('/assets/images/logo.png')}}" alt="" class="logo">
+    
     <form action="">
         <input type="text" id="fname" name="username" placeholder="Username">
         <input type="password" id="fname" name="password" placeholder="Password">
