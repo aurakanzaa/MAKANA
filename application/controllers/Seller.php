@@ -5,7 +5,7 @@ require APPPATH .'/libraries/REST_Controller.php';
 use Restserver\libraries\REST_Controller;
 
 
-class Kontak extends REST_Controller {
+class Seller extends REST_Controller {
 
 	public function __construct($config = 'rest')
 	{
@@ -17,12 +17,25 @@ class Kontak extends REST_Controller {
 	{
 		$id = $this->get('id');
 		if ($id == '') {
-			$kontak = $this->db->get('telepon')->result();
+			$data = $this->db->get('seller')->result();
 		} else {
 			$this->db->where('id', $id);
-			$kontak = $this->db->get('telepon')->result();
+			$data = $this->db->get('seller')->result();
 		}
-		$this->response($kontak, 200);
+		$this->response($data, 200);
+		
+	}
+
+	public function getDataKar()
+	{
+		$id = $this->get('id');
+		if ($id == '') {
+			$data = $this->db->get('seller')->result();
+		} else {
+			$this->db->where('id', $id);
+			$data = $this->db->get('seller')->result();
+		}
+		$this->response($data, 200);
 		
 	}
 
@@ -30,10 +43,13 @@ class Kontak extends REST_Controller {
 	{
 		$data = array(
 			'id' => $this->post('id'),
-			'nama' => $this->post('nama'),
-			'nomor' => $this->post('nomor'), 
+			'fullname' => $this->post('fullname'),
+			'username' => $this->post('username'),
+			'phone' => $this->post('phone'),
+			'password' => $this->post('password'),
+			'email' => $this->post('email') 
 		);
-		$insert = $this->db->insert('telepon', $data);
+		$insert = $this->db->insert('seller', $data);
 		if ($insert) {
 			$this->response($data, 200);
 		} else {
@@ -46,12 +62,15 @@ class Kontak extends REST_Controller {
 	{
 		$id = $this->put('id');
 		$data = array(
-			'id' =>$this->put('id') ,
-			'nama' =>$this->put('nama') ,
-			'nomor' =>$this->put('nomor') 
+			'id' => $this->put('id'),
+			'fullname' => $this->put('fullname'),
+			'username' => $this->put('username'),
+			'phone' => $this->put('phone'),
+			'password' => $this->put('password'),
+			'email' => $this->put('email') 
 		);
 		$this->db->where('id', $id);
-		$update = $this->db->update('telepon', $data);
+		$update = $this->db->update('seller', $data);
 		if ($update) {
 			$this->response($data,200);
 		} else {
