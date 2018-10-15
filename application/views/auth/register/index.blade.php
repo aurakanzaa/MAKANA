@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container margin">
     <form action="">
         <input type="text" id="fname" name="name" placeholder="Name">
         <input type="text" id="fname" name="username" placeholder="Username">

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="{{base_url('/assets/css/cssutama.css')}}">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    
 
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
