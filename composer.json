@@ -1,27 +1,25 @@
 {
-  "name": "codeigniter-extended",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "M Nindra Zaka",
-      "email": "mnindrazaka@gmail.com"
-    },
-    {
-      "name": "Ivan Fadila Putra",
-      "email": "i.fadilaputra@gmail.com"
-    }
-  ],
-  "require": {
-    "nesbot/carbon": "^1.23",
-    "philo/laravel-blade": "3.*",
-    "illuminate/database": "5.*",
-    "illuminate/validation": "^5.6",
-    "illuminate/translation": "^5.6",
-    "illuminate/filesystem": "^5.6"
-  },
-  "autoload": {
-    "classmap": [
-      "application/models"
-    ]
-  }
+	"description": "REST Server for the CodeIgniter framework",
+	"name": "chriskacerguis/codeigniter-restserver",
+	"type": "project",
+	"homepage": "https://github.com/chriskacerguis/codeigniter-restserver",
+	"authors": [
+		{
+			"name": "Chris Kacerguis",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"autoload": {
+		"classmap": [
+			"application/libraries/Format.php",
+			"application/libraries/REST_Controller.php"
+		]
+	},
+	"license": "MIT",
+	"support": {
+		"source": "https://github.com/chriskacerguis/codeigniter-restserver"
+	}
 }
