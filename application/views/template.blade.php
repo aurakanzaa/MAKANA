@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     <!-- <script src="{{base_url('node_modules/bootstap/dist/js/bootstap.min.js')}}"></script> -->
-    <title>Login</title>
+    <title>Register</title>
 </head>
 <body>
     @yield('content')

@@ -35,3 +35,12 @@ input[type=submit]:hover {
     background-color: #45a049;
     color: white;
 }
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+p{
+    
+    color: white;
+}
