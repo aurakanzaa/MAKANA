@@ -16,6 +16,12 @@
 
         <input type="submit" value="Log In">
     </form>
+    <br><br><br>
+    <div class="inline">
+        <p class="text-align:center">Don't have an account?
+        <a href="#" style="color:white">Register</a></p>
+    </div>
+    
 </div>
 
 @endsection

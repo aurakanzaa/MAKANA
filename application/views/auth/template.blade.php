@@ -14,6 +14,11 @@
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     <!-- <script src="{{base_url('node_modules/bootstap/dist/js/bootstap.min.js')}}"></script> -->
     <title>Login</title>
+    <style>
+        body{
+            background-color: #DC0A1D;
+        }
+    </style>
 </head>
 <body>
     @yield('content')
