@@ -5,7 +5,7 @@ require APPPATH .'/libraries/REST_Controller.php';
 use Restserver\libraries\REST_Controller;
 
 
-class Seller extends REST_Controller {
+class category extends REST_Controller {
 
 	public function __construct($config = 'rest')
 	{
@@ -17,23 +17,23 @@ class Seller extends REST_Controller {
 	{
 		$id = $this->get('id');
 		if ($id == '') {
-			$data = $this->db->get('seller')->result();
+			$data = $this->db->get('category')->result();
 		} else {
 			$this->db->where('id', $id);
-			$data = $this->db->get('seller')->result();
+			$data = $this->db->get('category')->result();
 		}
 		$this->response($data, 200);
 		
 	}
 
-	public function getDataKar()
+	public function getDataOut()
 	{
 		$id = $this->get('id');
 		if ($id == '') {
-			$data = $this->db->get('seller')->result();
+			$data = $this->db->get('category')->result();
 		} else {
 			$this->db->where('id', $id);
-			$data = $this->db->get('seller')->result();
+			$data = $this->db->get('category')->result();
 		}
 		$this->response($data, 200);
 		
@@ -43,13 +43,10 @@ class Seller extends REST_Controller {
 	{
 		$data = array(
 			'id' => $this->post('id'),
-			'fullname' => $this->post('fullname'),
-			'username' => $this->post('username'),
-			'phone' => $this->post('phone'),
-			'password' => $this->post('password'),
-			'email' => $this->post('email') 
+			'name' => $this->post('name'),
+			'description' => $this->post('description')
 		);
-		$insert = $this->db->insert('seller', $data);
+		$insert = $this->db->insert('category', $data);
 		if ($insert) {
 			$this->response($data, 200);
 		} else {
@@ -63,14 +60,11 @@ class Seller extends REST_Controller {
 		$id = $this->put('id');
 		$data = array(
 			'id' => $this->put('id'),
-			'fullname' => $this->put('fullname'),
-			'username' => $this->put('username'),
-			'phone' => $this->put('phone'),
-			'password' => $this->put('password'),
-			'email' => $this->put('email') 
+			'name' => $this->put('name'),
+			'description' => $this->put('description')
 		);
 		$this->db->where('id', $id);
-		$update = $this->db->update('seller', $data);
+		$update = $this->db->update('category', $data);
 		if ($update) {
 			$this->response($data,200);
 		} else {
@@ -83,7 +77,7 @@ class Seller extends REST_Controller {
 	{
 		$id=$this->delete('id');
 		$this->db->where('id', $id);
-		$delete = $this->db->delete('seller');
+		$delete = $this->db->delete('category');
 		if ($delete) {
 			$this->response(array('status' => 'success'),201);
 		} else {
