@@ -15,7 +15,7 @@
         </select>
         <br><br>
 
-        <input type="submit" value="Register">
+        <input type="submit" class="red-submit" value="Register">
     </form>
 <br><br><br>
     <div class="inline">

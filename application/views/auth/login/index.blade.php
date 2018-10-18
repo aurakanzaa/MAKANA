@@ -14,7 +14,7 @@
             <option value="usa">USA</option>
         </select>
 
-        <input type="submit" value="Log In">
+        <input type="submit" class="red-submit" value="Log In">
     </form>
     <br><br><br>
     <div class="inline">
