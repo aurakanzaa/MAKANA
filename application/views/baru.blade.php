@@ -8,9 +8,9 @@
     <img src="{{base_url('/assets/images/logo.png')}}" alt="" class="logo" style="background-color:black;">
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Shirts</a>
-    <a href="#" class="w3-bar-item w3-button">Dresses</a>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#" class="w3-bar-item w3-button">My Order</a>
+    <!-- <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Jeans <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
@@ -18,11 +18,11 @@
       <a href="#" class="w3-bar-item w3-button">Relaxed</a>
       <a href="#" class="w3-bar-item w3-button">Bootcut</a>
       <a href="#" class="w3-bar-item w3-button">Straight</a>
-    </div>
-    <a href="#" class="w3-bar-item w3-button">Jackets</a>
-    <a href="#" class="w3-bar-item w3-button">Gymwear</a>
-    <a href="#" class="w3-bar-item w3-button">Blazers</a>
-    <a href="#" class="w3-bar-item w3-button">Shoes</a>
+    </div> -->
+    <a href="#" class="w3-bar-item w3-button">History</a>
+    <a href="#" class="w3-bar-item w3-button">Profile</a>
+    <a href="#" class="w3-bar-item w3-button">Logout</a>
+    <!-- <a href="#" class="w3-bar-item w3-button">Shoes</a> -->
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
